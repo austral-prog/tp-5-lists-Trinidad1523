@@ -1,6 +1,10 @@
 # Ejercicio 5: Encontrar el máximo en una lista
 
 def find_max(lista):
+    if len(lista) > 0:
+        return max(lista)
+    else:
+        return None
     """
     Encuentra y retorna el valor máximo en una lista de números.
     Si la lista está vacía, retorna None.

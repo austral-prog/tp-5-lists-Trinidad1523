@@ -1,6 +1,19 @@
 # Ejercicio 4: Remover elementos en posiciones específicas
 
 def remove_elements(lista):
+    if len(lista) >= 6:
+        lista.pop(5)
+        lista.pop(4)
+        lista.pop(0)
+        return lista
+    elif len(lista) >= 5:
+        lista.pop(4)
+        lista.pop(0)
+    elif len(lista) < 5 and len(lista) > 0:
+        lista.pop(0)
+        return lista
+    else:
+        return lista
     """
     Remueve el primer, quinto y sexto elemento de la lista.
     La función debe funcionar con listas de cualquier tamaño.
